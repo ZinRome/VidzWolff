@@ -593,27 +593,27 @@
             <div class="video-scroller">
                 <!-- REPLACE THESE PLACEHOLDERS AND LINKS WITH YOUR CONTENT -->
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-1.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+1" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2020-12-26/3121800/3121800_13.jpg" loading="lazy">
                     <span class="video-duration">2:45</span>
                 </div>
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-2.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+2" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2020-09-19/3862378/3862378_23.jpg" loading="lazy">
                     <span class="video-duration">5:12</span>
                 </div>
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-3.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+3" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2015-02-12/2600113/2600113_15.jpg" loading="lazy">
                     <span class="video-duration">3:30</span>
                 </div>
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-4.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+4" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2021-04-18/4666389/4666389_20.jpg" loading="lazy">
                     <span class="video-duration">7:21</span>
                 </div>
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-5.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+5" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2020-02-06/3330469/3330469_16.jpg" loading="lazy">
                     <span class="video-duration">4:15</span>
                 </div>
                 <div class="video-thumb" onclick="window.open('https://your-ad-link-6.com', '_blank')">
-                    <img src="https://via.placeholder.com/120x68/ff006a/ffffff?text=Hot+Girls+6" loading="lazy">
+                    <img src="https://t.auntmia.com/nthumbs/2013-02-13/2978807/2978807_17.jpg" loading="lazy">
                     <span class="video-duration">6:40</span>
                 </div>
             </div>
@@ -629,7 +629,7 @@
             <button class="server-btn"><div class="world-ball-icon"></div>Hidden Cam</button>
             <button class="server-btn"><div class="world-ball-icon"></div>Home made</button>
             <button class="server-btn"><div class="world-ball-icon"></div>Lesbian</button>
-            <button class="server-btn"><div class="world-ball-icon"></div>School</button>
+            <button class="server-btn"><div class="world-ball-icon"></div>Gay</button>
         </div>
         
         <!-- Bottom Banner Ad -->
@@ -763,6 +763,12 @@
             };
             
             popupOverlay.style.display = 'flex';
+            
+            // Auto-close after 7 seconds
+            setTimeout(() => {
+                popupOverlay.style.display = 'none';
+                popupTimer = setTimeout(showPopup, popupConfig.repeatInterval);
+            }, 7000);
         }
         
         popupImg.src = popupConfig.imageUrl;
